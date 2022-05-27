@@ -1,0 +1,16 @@
+{
+  "name": "jaysonjphillips.com",
+  "workspaces": [
+    "web",
+    "studio"
+  ],
+  "private": true,
+  "version": "2.1.0-beta",
+  "description": "Beta version of the new site",
+  "main": "n/a",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

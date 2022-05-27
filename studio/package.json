@@ -1,0 +1,41 @@
+{
+  "name": "jaysonjphillipscodeting",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Jayson J. Phillips <hey.there@jaysonjphillips.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.30.0",
+    "@sanity/code-input": "^2.30.0",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.30.0",
+    "@sanity/dashboard": "^2.30.0",
+    "@sanity/default-layout": "^2.30.0",
+    "@sanity/default-login": "^2.30.0",
+    "@sanity/desk-tool": "^2.30.0",
+    "@sanity/eslint-config-studio": "^2.0.0",
+    "@sanity/vision": "^2.30.0",
+    "eslint": "^8.6.0",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-gist": "^1.2.4",
+    "react-icons": "^4.3.1",
+    "sanity-plugin-asset-source-unsplash": "^0.2.1",
+    "sanity-plugin-content-calendar": "^1.2.5",
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.13",
+    "sanity-plugin-dashboard-widget-netlify": "^1.2.1",
+    "sanity-plugin-media": "^1.4.8",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {}
+}

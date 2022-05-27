@@ -1,0 +1,42 @@
+// {
+//   "root": true,
+//   "project": {
+//     "name": "Jayson J. Phillips | Code & Ting"
+//   },
+//   "api": {
+//     "projectId": "p6sl7ohb",
+//     "dataset": "production"
+//   },
+//   "plugins": [
+//     "@sanity/base",
+//     "@sanity/default-layout",
+//     "@sanity/default-login",
+//     "@sanity/desk-tool",
+//     "@sanity/components",
+//     "media",
+//     "@sanity/code-input",
+//     "dashboard-widget-document-list",
+//     "dashboard-widget-structure-menu",
+//     "dashboard-widget-netlify",
+//     "content-calendar",
+//     "asset-source-unsplash",
+//     "@sanity/dashboard"
+//   ],
+//   "env": {
+//     "development": {
+//       "plugins": [
+//         "@sanity/vision"
+//       ]
+//     }
+//   },
+//   "parts": [
+//     {
+//       "name": "part:@sanity/base/schema",
+//       "path": "./schemas/schema"
+//     },
+//     {
+//       "name": "part:@sanity/desk-tool/structure",
+//       "path": "./deskStructure.js"
+//     }
+//   ]
+// }

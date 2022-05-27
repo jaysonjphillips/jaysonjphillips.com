@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+  .custom-class {
+    @apply ...;
+  }
+} */
+
+/* global */
+body {
+  color: #dbdee1;
+  font-family: "Work Sans", sans-serif;
+  @apply text-lg font-normal leading-relaxed mt-0 mb-4;
+}
+
+.bg-dark-jjp {
+  background-color: #252729 !important;
+}
+
+/* Blog Post Styles */
+.blog-post {
+  @apply max-w-7xl mx-auto py-6;
+  margin-bottom: 25px;
+  background-color: #252729;
+}
+
+.blog-post-grid {
+  grid-template-rows: minmax(400px, auto);
+}
+
+.blog-post .title {
+
+  color: #dbdee1;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/*  content index */
+.content-index {
+  @apply max-w-7xl mx-auto px-2 py-6;
+  margin-bottom: 25px;
+  background-color: #252729;
+  color:#dbdee1;
+  font-size: 1rem;
+}
+
+.content-index .title {
+  color: #dbdee1;
+  line-height: 1.5em;
+  font-size: 2.5em;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.nav-link-font {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.nav-link {
+  padding-bottom: 5px;
+}
+
+.nav-link.active {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #dbdee1;
+}
+
+.main-bg {
+  background-color: #252729;
+}
+
+.subtitle {
+  color: #dbdee1;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  @apply pb-4;
+}
+
+.subtitle.light {
+  @apply text-zinc-900;
+}
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  color: #dbdee1;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  color: #dbdee1;
+}
+
+p {
+  color: #dbdee1;
+  font-family: "Work Sans", sans-serif;
+  @apply text-lg font-normal leading-relaxed mt-0 mb-4;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h3 { @apply text-2xl mt-4 mb-2 pb-4 font-medium}
+
+ul li {
+  @apply pl-4 pb-4 text-lg;
+}
+
+li ul {
+  @apply py-2;
+}
+
+.inline-code {
+  @apply text-orange-400;
+  display: inline;
+  /* color:#a9b7c6; */
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction:ltr;
+  text-align:left;
+  white-space:pre;
+  word-spacing:normal;
+  word-break:normal;
+  line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;margin:.5em 0;overflow:auto;background:#2b2b2b
+}
+
+.lightbox {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @apply py-12 backdrop-blur-sm bg-black/80;
+}
+
+.lightbox-image {
+  max-width: 1264px;
+  @apply mx-auto rounded-xl;
+}
+
+.lightbox-caption {
+  width: 100%;
+  @apply mt-2 font-semibold mx-auto max-w-5xl;
+}
+
+.byline a,
+.blog-post a {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #dbdee1;
+  @apply text-orange-400 font-semibold;
+}
