@@ -1,4 +1,3 @@
-import { ImageUrlBuilder } from "@sanity/image-url/lib/types/builder";
 import imageUrlBuilder from "@sanity/image-url";
 import { config } from "./sanityClient";
 
