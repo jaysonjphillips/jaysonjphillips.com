@@ -77,7 +77,6 @@ export default function CategoryPage() {
               <h1 className="title">{content.data.title}</h1>
               <section className="blog-post">
                   <div className="relative inset-0 overflow-hidden rounded-lg pb-6">
-                      {/* <img src={getHeaderImageUrl(data[0].mainImage, 7, 1264)} /> */}
                       <ProgressiveSanityImage mainImage={content.data.mainImage} hf={5} width={1264} />
                       <div className="absolute inset-0 bg-gray-500" style={{mixBlendMode: 'soft-light'}} />
                       {content.data.mainImage.caption && (
