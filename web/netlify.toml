@@ -1,5 +1,5 @@
 [build]
-  command = "remix build"
+  command = "npm run build"
   functions = "netlify/functions"
   publish = "public/build"
 
@@ -13,6 +13,6 @@
   status = 200
 
 [[headers]]
-  for = "/build/*"
+  for = "public/build/*"
   [headers.values]
     "Cache-Control" = "public, max-age=31536000, s-maxage=31536000"
