@@ -2,7 +2,7 @@
   node_bundler = "esbuild"
   external_node_modules = ["@remix-run/react"]
   command = "npm run build"
-  functions = "netlify/functions"
+  functions = "./netlify/functions-internal"
   publish = "public/build"
 
 [dev]
