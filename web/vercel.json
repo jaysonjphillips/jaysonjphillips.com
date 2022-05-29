@@ -4,6 +4,16 @@
         "source": "/blog/:year/:month/:slug", 
         "destination": "/blog/:slug",
         "permanent": true 
+      },
+      { 
+        "source": "/photos/:year/:month/:slug", 
+        "destination": "/photos/:slug",
+        "permanent": true 
+      },
+      { 
+        "source": "/tutorials/:year/:month/:slug", 
+        "destination": "/tutorials/:slug",
+        "permanent": true 
       }
     ]
   }
