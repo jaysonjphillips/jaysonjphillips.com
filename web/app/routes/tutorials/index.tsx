@@ -9,11 +9,24 @@ export let loader: LoaderFunction = async ({ params }) => {
         `*[_type == "post" && lower(categories[0]->title) == "tutorials"] | order(publishedAt desc){_id, title, excerpt, slug, publishedAt, categories[0]->{title, description}, description, readingTime, author->{name, imageUrl}, "mainImage": {"asset": mainImage.asset->{_id, url}, "alt": mainImage.alt, "caption":mainImage.caption}}`
     );
   };
+
+const transition = { duration: 0.75, ease: "easeInOut" };
+
+const postVariants = {
+    initial: { x: -500, opacity: 0 },
+    enter: { x: 0, opacity: 1, transition },
+    exit: { x: 500, opacity: 0, transition },
+};
   
 export default function TutorialsIndex() {
     const content = useLoaderData();
     return (
-        <motion.div initial={{opacity: 0}} exit={{opacity: .5, scale: .5}} animate={{opacity: 1}} transition={{ duration: 1.25, type: "tween" }}>
+        <motion.div 
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={postVariants}
+            key={"tutorials-index"}>
             <h1 className="title">All things tutorials.</h1>
             <CategoryPostIndex posts={content} />
         </motion.div>

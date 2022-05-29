@@ -11,13 +11,13 @@ export const loader: LoaderFunction = async () => {
       );
 }
 
-const transition = { duration: 0.5, ease: "easeInOut" };
+const transition = { duration: 0.75, ease: "easeInOut" };
 
 const postVariants = {
-    initial: { y: 100, opacity: 0 },
-    enter: { y: 0, opacity: 1, transition },
-    exit: { y: -100, opacity: 0, transition }
-}; 
+    initial: { x: -500, opacity: 0 },
+    enter: { x: 0, opacity: 1, transition },
+    exit: { x: 500, opacity: 0, transition },
+};
 
 export default function BlogIndex() {
     const data = useLoaderData().slice(0, 5);
