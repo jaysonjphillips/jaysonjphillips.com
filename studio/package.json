@@ -1,5 +1,5 @@
 {
-  "name": "jaysonjphillipscodeting",
+  "name": "studio.jaysonjphillips.com",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -37,5 +37,7 @@
     "sanity-plugin-media": "^1.4.8",
     "styled-components": "^5.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@sanity/cli": "^2.30.0"
+  }
 }
