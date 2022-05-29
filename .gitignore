@@ -7,3 +7,4 @@ build.map
 dist
 
 *.bak
+studio/sanity.json.bak

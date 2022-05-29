@@ -20,7 +20,8 @@
     "media",
     "dashboard-widget-netlify",
     "content-calendar",
-    "asset-source-unsplash"
+    "asset-source-unsplash",
+    "vercel-deploy"
   ],
   "parts": [
     {
