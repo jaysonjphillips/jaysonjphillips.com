@@ -16,15 +16,16 @@
     "dev2:remix": "remix dev",
     "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css",
     "start": "cross-env NODE_ENV=production netlify dev",
-    "start:netlify": "cross-env NODE_ENV=production netlify dev"
+    "start:netlify": "cross-env NODE_ENV=production netlify dev",
+    "serve": "remix-serve build"
   },
   "dependencies": {
     "@netlify/functions": "^0.10.0",
     "@portabletext/react": "^1.0.6",
-    "@remix-run/netlify": "^1.3.4",
-    "@remix-run/node": "^1.3.4",
-    "@remix-run/react": "^1.3.4",
-    "@remix-run/serve": "^1.4.3",
+    "@remix-run/netlify": "^1.5.1",
+    "@remix-run/node": "1.5.1",
+    "@remix-run/react": "1.5.1",
+    "@remix-run/serve": "1.5.1",
     "@sanity/image-url": "^1.0.1",
     "@types/react-syntax-highlighter": "^15.5.1",
     "cross-env": "^7.0.3",
@@ -37,8 +38,8 @@
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.3.4",
-    "@remix-run/eslint-config": "^1.3.4",
+    "@remix-run/dev": "^1.5.1",
+    "@remix-run/eslint-config": "^1.5.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "autoprefixer": "^10.4.7",
