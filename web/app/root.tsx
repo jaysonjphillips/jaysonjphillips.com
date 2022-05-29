@@ -80,7 +80,9 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <Meta /> <Links />
+        <Meta /> 
+        <link rel="manifest" href="/resources/manifest.json" />
+        <Links />
       </head>
       <body className="main-bg">
         <NavBar /> <Outlet /> <ScrollRestoration /> <Scripts /> <LiveReload />
