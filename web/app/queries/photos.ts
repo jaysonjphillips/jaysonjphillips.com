@@ -26,6 +26,6 @@ export const getPhotoGalleryRefsBySlug = async (slug: string) => {
 }
 
 export const getWidthAndHeightFromRef = (ref: string) => {
-    return ref.split("-").at(-2)?.split("x");
+    return ref.split("-")[2].split("x")  || [1920, 1080];
 
 }

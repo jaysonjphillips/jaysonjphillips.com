@@ -8,11 +8,9 @@ import ProgressiveSanityImage from "~/components/Images/ProgressiveSanityImage";
 import PhotoCardHeader from "~/components/PhotoCard/PhotoCardHeader";
 import Portable from "~/components/PortableText";
 import {
-  getPhotoGalleryBySlug,
   getPhotoGalleryRefsBySlug,
   getWidthAndHeightFromRef,
 } from "~/queries/photos";
-import sanityClient from "../../lib/sanityClient";
 
 export let loader: LoaderFunction = async ({ params }) => {
   const slug: string = params.slug || "";
@@ -41,9 +39,7 @@ export default function GalleryPost() {
         className="blog-post grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
       >
         {data.gallery.map((file: { [index: string]: any }) => {
-          const [w]: any =
-            getWidthAndHeightFromRef(file.asset._ref) || undefined;
-
+          const [w, h]: any = getWidthAndHeightFromRef(file.asset._ref);
           return (
             <li key={file._key} className="relative">
               <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
