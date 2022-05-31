@@ -107,7 +107,7 @@ export default {
       return {
         title,
         media,
-        subtitle: publishedAt ? path : 'Missing publishing date'
+        subtitle: path
       }
     }
   }
