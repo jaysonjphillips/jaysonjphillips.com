@@ -14,7 +14,7 @@ import Portable from "./PortableText";
             {posts.map((post: any) => {
                 let date = new Date(post.publishedAt);
                 return (
-                <article key={post.title || post.mainImage.title} className="grid md:grid-cols-2 gap-x-4 grid-cols-1">
+                <article key={post.title && post.title || post.mainImage.title} className="grid md:grid-cols-2 gap-x-4 grid-cols-1">
                   <div> 
                         <ProgressiveSanityImage mainImage={post.mainImage} hf={13} width={1080} />
                   </div>
