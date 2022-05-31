@@ -18,7 +18,6 @@
     "dashboard-widget-document-list",
     "@sanity/code-input",
     "media",
-    "dashboard-widget-netlify",
     "content-calendar",
     "asset-source-unsplash",
     "vercel-deploy"
