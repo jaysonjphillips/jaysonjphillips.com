@@ -9,7 +9,7 @@ function PageHeader(props: any) {
         <div className="mb-8">
             <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gray-100 rounded-xl" />
-                <div className="max-w-7xl mx-auto sm:px-2">
+                <div className="max-w-6xl mx-auto sm:px-2">
                     <div className="shadow-xl sm:overflow-hidden">
                         <div className="absolute inset-0 overflow-hidden rounded-xl">
                             <ProgressiveSanityImage mainImage={mainImage} hf={7} width={1264} />

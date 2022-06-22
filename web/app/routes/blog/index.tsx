@@ -21,15 +21,10 @@ const postVariants = {
 export default function BlogIndex() {
     const content = useLoaderData().slice(0, 5);
     return (
-        <motion.div 
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}
-        key={"blog-index"}>
+        <section>
             <h1 className="title">All things blog.</h1>
             <CategoryPostIndex posts={content} />
             <Link to={`/blog/archive`} className="text-gray-500 poppins font-semibold text-xl">View all posts</Link>
-        </motion.div>
+        </section>
     )
 }

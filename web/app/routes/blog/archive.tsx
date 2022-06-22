@@ -21,13 +21,9 @@ const postVariants = {
 export default function BlogIndex() {
     const content = useLoaderData();
     return (
-        <motion.div 
-        initial="exit"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}>
+        <section>
             <h1 className="title">All things blog.</h1>
             <CategoryPostIndex posts={content} archive={true} />
-        </motion.div>
+        </section>
     )
 }

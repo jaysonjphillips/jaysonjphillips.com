@@ -22,11 +22,7 @@ const postVariants = {
 export default function BlogIndex() {
     const data = useLoaderData().slice(0, 5);
     return (
-        <motion.div 
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}>
+        <section>
             <h1 className="title">All things photos.</h1>
             {data.map((post: any, idx: number) => (
                 <div key={idx} className="py-6">
@@ -34,6 +30,6 @@ export default function BlogIndex() {
                     <PhotoCardBody {...post} />
                 </div>
             ))}
-        </motion.div>
+        </section>
     )
 }

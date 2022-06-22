@@ -11,9 +11,10 @@
     "nop:build:css2": "postcss styles --base styles --dir app/styles --env production",
     "build:remix": "cross-env NODE_ENV=production remix build",
     "dev": "run-p dev:*",
-    "dev:css": "npm run generate:css",
+    "dev:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css -w",
     "dev:remix": "remix dev",
     "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css",
+
     "serve": "remix-serve build"
   },
   "dependencies": {

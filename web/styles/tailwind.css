@@ -16,14 +16,14 @@ body {
 }
 
 .bg-dark-jjp {
-  background-color: #252729 !important;
+  background-color: #111 !important;
 }
 
 /* Blog Post Styles */
 .blog-post {
-  @apply max-w-7xl mx-auto py-6;
+  @apply max-w-6xl mx-auto py-6;
   margin-bottom: 25px;
-  background-color: #252729;
+  background-color: #111;
 }
 
 .blog-post-grid {
@@ -40,9 +40,9 @@ body {
 
 /*  content index */
 .content-index {
-  @apply max-w-7xl mx-auto px-2 py-6;
+  @apply max-w-6xl mx-auto px-2 py-6;
   margin-bottom: 25px;
-  background-color: #252729;
+  background-color: #111;
   color:#dbdee1;
   font-size: 1rem;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .main-bg {
-  background-color: #252729;
+  background-color: #111;
 }
 
 .subtitle {
@@ -145,7 +145,7 @@ li ul {
 
 .lightbox-caption {
   width: 100%;
-  @apply mt-2 font-semibold mx-auto max-w-5xl;
+  @apply mt-2 font-semibold mx-auto max-w-6xl;
 }
 
 .byline a,
