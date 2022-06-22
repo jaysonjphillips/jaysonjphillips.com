@@ -2,7 +2,7 @@
 export default function Categories() {
     return (
       <div className="bg-white">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl">
+        <div className="mx-auto py-16 px-4 sm:py-24 sm:px-6">
           <div className="relative rounded-lg overflow-hidden lg:h-96">
             <div className="absolute inset-0">
               <img

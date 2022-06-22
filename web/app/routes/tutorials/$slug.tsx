@@ -17,14 +17,9 @@ export default function TutorialPost() {
   const data: Post = useLoaderData()[0];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0.5 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.25, type: "tween" }}
-    >
+    <section>
       <h1 className="title">{data.title}</h1>
-      <section className="blog-post">
+      <article className="blog-post">
         <div className="relative inset-0 overflow-hidden rounded-lg pb-6">
           <ProgressiveSanityImage mainImage={data.mainImage} hf={5} width={1264} />
           {/* {mainImage && (<Img fluid={mainImage.asset.fluid} />)} */}
@@ -38,8 +33,8 @@ export default function TutorialPost() {
             <Portable blocks={data.body} />
           </div>
           <div>
-            <p>This post was written by {data.author.name}. 
-              It was published in <strong>{data.categories.title}</strong> 
+            <p>This post was written by {data.author.name}.
+              It was published in <strong>{data.categories.title}</strong>
               {` `} on {format(parseISO(data.publishedAt), "EEEE, MMMM do, yyyy")}
               {data._updatedAt
                 ? ` and last updated on ${format(parseISO(data._updatedAt), "EEEE, MMMM do, yyyy")}`
@@ -49,7 +44,7 @@ export default function TutorialPost() {
         </div>
 
         <ByLine author={data.author} />
-      </section>
-    </motion.div>
+      </article>
+    </section>
   );
 }

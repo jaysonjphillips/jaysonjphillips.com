@@ -13,7 +13,7 @@
     "dev": "run-p dev:*",
     "dev:css": "npm run generate:css",
     "dev:remix": "remix dev",
-    "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css",
+    "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css -w",
     "serve": "remix-serve build"
   },
   "dependencies": {

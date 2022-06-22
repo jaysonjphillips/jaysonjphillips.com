@@ -21,14 +21,9 @@ const postVariants = {
 export default function TutorialsIndex() {
     const content = useLoaderData();
     return (
-        <motion.div 
-            initial="initial"
-            animate="enter"
-            exit="exit"
-            variants={postVariants}
-            key={"tutorials-index"}>
+        <section>
             <h1 className="title">All things tutorials.</h1>
             <CategoryPostIndex posts={content} />
-        </motion.div>
+        </section>
     )
 }

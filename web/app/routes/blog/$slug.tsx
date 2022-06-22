@@ -22,15 +22,9 @@ const postVariants = {
 export default function CategoryPost() {
   const data: Post = useLoaderData()[0];
   return (
-    <motion.div
-      initial="initial"
-      animate="enter"
-      exit="exit"
-      variants={postVariants}
-      key={`${data._id}-post`}
-    >
+    <section>
       <h1 className="title">{data.title}</h1>
-      <section className="blog-post">
+      <article className="blog-post">
         <div className="relative inset-0 overflow-hidden rounded-lg mb-6">
           <ProgressiveSanityImage mainImage={data.mainImage} hf={5} width={1264} />
 
@@ -57,7 +51,7 @@ export default function CategoryPost() {
           </div>
         </div>
         <ByLine author={data.author} />
-      </section>
-    </motion.div>
+      </article>
+    </section>
   );
 }

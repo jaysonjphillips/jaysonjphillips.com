@@ -9,7 +9,7 @@ import Portable from "./PortableText";
     const {posts, archive = false} = props;
     return (
       <div className="pt-6 pb-4 lg:pb-8 lg:pt-6 work-sans">
-        <div className="relative max-w-2xl mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
+        <div className="relative mx-auto divide-y-2 divide-gray-200">
           <div className={`grid ${archive ? 'grid-cols-2' : 'grid-cols-1'} gap-y-6 lg:gap-y-12 md:gap-x-8 xs:max-w-1/2`}>
             {posts.map((post: any) => {
                 let date = new Date(post.publishedAt);

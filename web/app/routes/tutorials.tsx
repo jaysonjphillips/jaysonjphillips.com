@@ -14,9 +14,7 @@ export default function Tutorials() {
   return (
     <>
         <section className="content-index category-index">
-        <AnimatePresence exitBeforeEnter>
           <Outlet />
-        </AnimatePresence>
         </section>
       </>
   );

@@ -15,7 +15,7 @@ export default function NavBar(props: Props) {
 
     return (
         <nav className="bg-black">
-          <div className="max-w-7xl mx-auto px-2">
+          <div className="max-w-6xl mx-auto px-2">
             <div className="relative flex items-center justify-between h-16">
             <div className="flex-shrink-0">
                 <h1 className="text-base tracking-tight nav-link-font font-extrabold text-white sm:text-xl my-auto md:ml-0 ">

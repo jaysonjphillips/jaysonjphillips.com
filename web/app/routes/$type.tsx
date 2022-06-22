@@ -17,17 +17,6 @@ export let loader: LoaderFunction = async ({ params }) => {
   const categories = await getSiteCategories();
   const isCategory = !!categories.find((cat: any) => cat.title.toLowerCase() == params.type)
   
-  if(isCategory) {
-    let posts = await sanityClient.fetch(
-      `*[_type == "post" && lower(categories[0]->title) == "${params.type}"] | order(publishedAt desc){_id, title, excerpt, slug, publishedAt, categories[0]->{title, description}, description, readingTime, author->{name, imageUrl}, "mainImage": {"asset": mainImage.asset->{_id, url}, "alt": mainImage.alt, "caption":mainImage.caption}}`
-    );
-
-    return {
-      type: "category",
-      data: posts
-    }
-  } 
-  
   if (!isCategory) {
     let result = await sanityClient.fetch(
       `*[_type == "page" && slug.current == "${params.type}"]{_id, title, body, _rawBody, excerpt, slug, _updatedAt, categories[0]->{title, description}, description, readingTime, author->{name, imageUrl}, "mainImage": {"asset": mainImage.asset->{_id, url}, "alt": mainImage.alt, "caption":mainImage.caption}}`
@@ -67,13 +56,7 @@ export default function CategoryPage() {
 
       {content.type === "static" && (
         <>
-          <motion.div 
-            initial="exit"
-            animate="enter"
-            exit="exit"
-            variants={postVariants}>
-            
-            <section className="content-index category-index">
+         <section className="content-index category-index">
               <h1 className="title">{content.data.title}</h1>
               <section className="blog-post">
                   <div className="relative inset-0 overflow-hidden rounded-lg pb-6">
@@ -96,7 +79,6 @@ export default function CategoryPage() {
                   </div>
               </section>
             </section>
-        </motion.div>
         </>
       )}
       </>
